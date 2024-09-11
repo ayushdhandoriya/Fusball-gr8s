@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Greats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fußball Greats</h1>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <!-- Repeat this block for each footballer -->
+            <div class="footballer-card" onclick="showStats('player1')">
+                <img src="../Dunk/images/rkgbh19_cristiano-ronaldo-afp_625x300_25_February_22.webp" alt="Footballer 1">
+                <p>Cristiano Ronaldo</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player2')">
+                <img src="../Dunk/images/fok66n6o_lionel-messi-fifa-world-cup-trophy_625x300_19_December_22.webp" alt="Footballer 2">
+                <p>Lionel Messi</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player3')">
+                <img src="../Dunk/images/8qfk3fho_sergio-ramos-afp_625x300_20_October_23.webp" alt="Footballer 2">
+                <p>Sergio Ramos</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player4')">
+                <img src="../Dunk/images/gl372mu8_thomas-mueller-afp_625x300_07_April_20.webp" alt="Footballer 2">
+                <p>Thomas Muller</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player5')">
+                <img src="../Dunk/images/n52fvl5o_robert-lewandowski-afp_625x300_09_March_22.webp" alt="Footballer 2">
+                <p>Robert Lewandowski</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player6')">
+                <img src="../Dunk/images/toni-kroos-germans-wc.webp" alt="Footballer 2">
+                <p>Toni Kross</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player7')">
+                <img src="../Dunk/images/343qb2ko_david-silva-afp_625x300_13_August_18.webp" alt="Footballer 2">
+                <p>David Silva</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player8')">
+                <img src="../Dunk/images/nagcl8uo_kevin-de-bruyne-afp-_625x300_24_November_22.webp" alt="Footballer 2">
+                <p>Kevin De Bruyne</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player9')">
+                <img src="../Dunk/images/1hn8hgh_sergio-busquets-806_625x300_10_May_23.webp" alt="Footballer 2">
+                <p>Sergio Busquets</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player10')">
+                <img src="../Dunk/images/qeqq1qko_manuel-neuer-afp_625x300_21_June_21.webp" alt="Footballer 2">
+                <p>Manuel Neuer</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player11')">
+                <img src="../Dunk/images/rb7c6cpo_neymar-afp-world-cup_625x300_09_December_22.webp" alt="Footballer 2">
+                <p>Neymar Jr.</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player12')">
+                <img src="../Dunk/images/philipp-lahm-bayern-afp_806x605_81478691346.webp"alt="Footballer 2">
+                <p>Phillip Lahm</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player13')">
+                <img src="../Dunk/images/13qqicho_salah-afp_625x300_01_December_23.webp"alt="Footballer 2">
+                <p>Mohamed Salah</p>
+            </div>
+            <div class="footballer-card" onclick="showStats('player14')">
+                <img src="../Dunk/images/gd86edcg_antoine-griezmann-afp_625x300_26_February_20.webp"alt="Footballer 2">
+                <p>Antoine Griezmann</p>
+            </div>
+
+
+            <!-- Add 49 more cards here -->
+        </div>
+
+        <!-- Modal to display player stats -->
+        <div id="player-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="player-name">Player Name</h2>
+                <p id="player-stats">Player stats and records will be displayed here.</p>
+                <div id="player-gif">
+                    <img src="" alt="Player Gif" id="player-gif-img" style="display:none; max-width:100%;">
+                </div>
+                <button onclick="goBack()">Back to Home Page</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Football Greats. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

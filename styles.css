@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34; /* Colored background */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #20232a;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /*grid-template-columns: repeat(5, 1fr); /* 5 columns grid */
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 60px; 
+}
+
+.footballer-card {
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.footballer-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+#player-gif img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.modal-content {
+    background-color: #444;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+button {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #20232a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 0;
+    font-style: normal;
+   
+}
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller columns on tablets */
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller columns on phones */
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+}
