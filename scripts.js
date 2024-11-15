@@ -86,9 +86,6 @@ function showStats(playerId) {
     playerStats.innerText = playerData.stats;
     playerGif.src = playerData.gif;
     playerGif.style.display = 'block';
-    
-
-
     modal.style.display = 'block';
 }
 
